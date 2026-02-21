@@ -7,18 +7,11 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Project tracking intro component</title>
-  <style>
-    .hide{
-      display: none;
-    }
-
-    .hero__image{
-      width: 100%;
-    }
-  </style>
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <div class="container">
+    <div class="decorative"></div>
     <header class="header">
       <nav class="header__nav">
         <img src="./images/logo.svg" alt="Company Logo" class="header__logo">
@@ -28,18 +21,21 @@
           <li><a href="">Pricing</a></li>
           <li><a href="">Login</a></li>
         </ul>
+        <img src="./images/icon-hamburger.svg" alt="Hamburger Menu Icon" class="header__hamburger">
       </nav>
-      <img src="./images/icon-hamburger.svg" alt="Hamburger Menu Icon" class="header__hamburger">
     </header>
     <main class="hero">
-        <img src="./images/illustration-devices.svg" alt="Hero Image" class="hero__image">
-        <section>
-          <p><span>New</span> Monograph Dashboard</p>
-          <h1>Powerful insights into your team</h1>
-          <p>Project planning and time tracking for agile teams</p>
-          <section class="button">
-            <button>Schedule a demo</button>
-            <button>To see a preview</button>
+        <section class="hero__image-container">
+           <img src="./images/illustration-devices.svg" alt="Hero Image" class="hero__image">
+        </section>
+       
+        <section class="hero__content">
+          <p class="hero__dashboard"><span>New</span> Monograph Dashboard</p>
+          <h1 class="hero__title">Powerful insights into your team</h1>
+          <p class="hero__text">Project planning and time tracking for agile teams</p>
+          <section class="hero__button-container">
+            <button class="hero__button">Schedule a demo</button>
+            <p class="hero__button-text">To see a preview</p>
           </section>
         </section>
     </main>
